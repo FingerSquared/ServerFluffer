@@ -1,5 +1,4 @@
 #!/usr/bin/python 
-
 # Checks for email over IMAP and sends data over serial to Arduino.
 
 import getpass, imaplib, os, email, re, time, serial
