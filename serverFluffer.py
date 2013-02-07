@@ -14,6 +14,15 @@ words = ['alerts@cloudmonitoring.rackspace.com']
 #negative number to go from beginning of list
 emailHistory = -10
 
+# email information
+#==================================================
+#==================================================
+#Required
+userName = ''
+passWord = ''
+#==================================================
+#==================================================
+
 
 class emailSearch(object):
 	"""docstring for emailSearch"""
@@ -23,7 +32,7 @@ class emailSearch(object):
 		# login in to email account
 		self.m = imaplib.IMAP4_SSL("imap.gmail.com")
 		#replace raw inputs with your credentials as string to automate
-		self.m.login(raw_input("Username:"), raw_input("password:"))
+		self.m.login(userName, passWord)
 		# change to select different inbox
 		self.m.select("INBOX")
 
