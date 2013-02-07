@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Checks for email over IMAP.
 
 import getpass, imaplib, os, email, re, time, serial
